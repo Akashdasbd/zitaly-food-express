@@ -1,5 +1,5 @@
 import express from 'express';
-import { homeController ,menuController} from '../controllers/PageController.js';
+import { homeController ,menuController ,staffController} from '../controllers/PageController.js';
 
 // express router initialization
 
@@ -10,6 +10,8 @@ const router = express.Router();
 router.get('/',homeController);
 
 router.get('/menu',menuController);
+
+router.get('/staff',staffController);
 
 // export router
 
