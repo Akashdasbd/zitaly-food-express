@@ -4,6 +4,8 @@ import { homeBanner } from "../data/home.js";
 
 import { homeWelcomeCards } from "../data/home.js";
 
+import { menuItems } from "../data/home.js";
+
 /**
  * Home controller for rendering the home page.
  * @param {*} req 
@@ -23,7 +25,11 @@ export const homeController = (req,res)=>{
  * @param {*} res 
  */
 export const menuController = (req,res)=>{
-    res.render('menu')
+    
+    res.render('menu',{
+
+        menuItems,
+    })
 }
 
 /**
